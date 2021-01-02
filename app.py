@@ -41,7 +41,7 @@ with col8:
     result8 = st.number_input('F8')
     st.text(f'{result4}')
 
-
+st.cache() # chache to store the model 
 model = load(open('testmodel.pkl', 'rb'))
 
 input = np.array([[float(result1), float(result2), float(result3), float(result4), float(result5), float(result6), float(result7),
